@@ -1,7 +1,5 @@
 package com.juaracoding.posttest21;
 
-import static org.hamcrest.CoreMatchers.equalTo;
-
 import org.json.simple.JSONObject;
 import org.testng.annotations.Test;
 
@@ -15,7 +13,7 @@ public class TestPost {
 	public void TestPost21() {
 		JSONObject request = new JSONObject();
 		request.put("name", "John Connor");
-		request.put("category", "SQA Engineer");
+		request.put("category", "Terminator");
 		request.put("price", 1000000);
 		System.out.println(request.toJSONString());
 
@@ -24,4 +22,32 @@ public class TestPost {
 				.statusCode(200).log().all();
 	}
 
+	@Test
+	public void TestPut() {
+		JSONObject request = new JSONObject();
+		request.put("name", "john Connor");
+		request.put("job", "Terminator");
+		System.out.println(request.toJSONString());
+
+		given().header("Content-Type", "application/json").contentType(ContentType.JSON).accept(ContentType.JSON)
+				.body(request.toJSONString()).when().put("https://mern-backend-8881.herokuapp.com/products").then()
+				.statusCode(404).log().all();
+	}
+
+	@Test
+	public void TestPatch() {
+		JSONObject request = new JSONObject();
+		request.put("name", "john Connor");
+		request.put("job", "Terminator");
+		System.out.println(request.toJSONString());
+
+		given().header("Content-Type", "application/json").contentType(ContentType.JSON).accept(ContentType.JSON)
+				.body(request.toJSONString()).when().patch("https://mern-backend-8881.herokuapp.com/products").then()
+				.statusCode(404).log().all();
+	}
+
+	@Test
+	public void TestDelete() {
+		when().delete("\"https://mern-backend-8881.herokuapp.com/products\"").then().statusCode(404).log().all();
+	}
 }
