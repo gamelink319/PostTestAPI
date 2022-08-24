@@ -2,16 +2,16 @@
 <testng-results ignored="3" total="4" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-08-23T23:49:05 WIB" name="Default suite" finished-at="2022-08-23T23:49:08 WIB" duration-ms="2487">
+  <suite started-at="2022-08-24T21:47:42 WIB" name="Default suite" finished-at="2022-08-24T21:47:44 WIB" duration-ms="2357">
     <groups>
     </groups>
-    <test started-at="2022-08-23T23:49:05 WIB" name="Default test" finished-at="2022-08-23T23:49:08 WIB" duration-ms="2487">
-      <class name="com.juaracoding.posttest21.TestGet">
-        <test-method signature="TestValidTiga()[pri:0, instance:com.juaracoding.posttest21.TestGet@5cee5251]" started-at="2022-08-23T23:49:05 WIB" name="TestValidTiga" finished-at="2022-08-23T23:49:08 WIB" duration-ms="2467" status="PASS">
+    <test started-at="2022-08-24T21:47:42 WIB" name="Default test" finished-at="2022-08-24T21:47:44 WIB" duration-ms="2357">
+      <class name="com.juaracoding.posttest21.TestPost">
+        <test-method signature="TestPatch()[pri:0, instance:com.juaracoding.posttest21.TestPost@5cee5251]" started-at="2022-08-24T21:47:42 WIB" name="TestPatch" finished-at="2022-08-24T21:47:44 WIB" duration-ms="2334" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- TestValidTiga -->
-      </class> <!-- com.juaracoding.posttest21.TestGet -->
+        </test-method> <!-- TestPatch -->
+      </class> <!-- com.juaracoding.posttest21.TestPost -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

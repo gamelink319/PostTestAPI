@@ -3,11 +3,11 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.juaracoding.posttest21.TestGet">
+      <class name="com.juaracoding.posttest21.TestPost">
         <methods>
-          <include name="TestValidTiga"/>
+          <include name="TestPatch"/>
         </methods>
-      </class> <!-- com.juaracoding.posttest21.TestGet -->
+      </class> <!-- com.juaracoding.posttest21.TestPost -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
